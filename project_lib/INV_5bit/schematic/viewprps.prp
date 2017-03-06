@@ -1,52 +1,52 @@
 (PropertyFile "1.0"
  (Creator " HDL Direct ver ver-date" )
- (Created " Mar  5 19:14:28 2017 " )
+ (Created " Mar  2 19:10:30 2017 " )
  (Cell  "\\INV_5bit\\"
   (View  "schematic"
-   (Inst "\\I9\\"
+   (Inst "\\I4\\"
 	(Pr
-	 ("partName" "XOR")
+	 ("partName" "INV")
 	 ("vendorName" "")
-	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
-	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
-	 ("\\pin#\\" "5")
-	 ("XY" "(6.750000,-6.625000)")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-3.437500)")
 	))
-   (Inst "\\I8\\"
+   (Inst "\\I3\\"
 	(Pr
-	 ("partName" "XOR")
+	 ("partName" "INV")
 	 ("vendorName" "")
-	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
-	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
-	 ("\\pin#\\" "5")
-	 ("XY" "(6.750000,-4.937500)")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-2.437500)")
 	))
-   (Inst "\\I7\\"
+   (Inst "\\I2\\"
 	(Pr
-	 ("partName" "XOR")
+	 ("partName" "INV")
 	 ("vendorName" "")
-	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
-	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
-	 ("\\pin#\\" "5")
-	 ("XY" "(6.750000,-3.250000)")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-1.437500)")
 	))
-   (Inst "\\I6\\"
+   (Inst "\\I1\\"
 	(Pr
-	 ("partName" "XOR")
+	 ("partName" "INV")
 	 ("vendorName" "")
-	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
-	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
-	 ("\\pin#\\" "5")
-	 ("XY" "(6.750000,-1.562500)")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-0.437500)")
 	))
-   (Inst "\\I5\\"
+   (Inst "\\I0\\"
 	(Pr
-	 ("partName" "XOR")
+	 ("partName" "INV")
 	 ("vendorName" "")
-	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
-	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
-	 ("\\pin#\\" "5")
-	 ("XY" "(6.750000,0.125000)")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,0.562500)")
 	))
   )
  )

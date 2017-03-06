@@ -16,35 +16,39 @@ output  OUT1;
 output  OUT2;
 output  OUT3;
 output  OUT4;
+wire net029;
 wire VDD;
 wire net29;
-wire net029;
-wire OUT0;
-wire net31;
-wire OUT3;
-wire A1;
 wire A0;
-wire net026;
-wire OUT2;
-wire A2;
-wire OUT1;
-wire net027;
-wire OUT4;
-wire A4;
+wire net028;
 wire GND;
 wire net27;
-wire A5;
-wire net030;
-wire net028;
 wire A3;
-wire net30;
+wire A1;
+wire A4;
+wire net030;
+wire OUT4;
+wire net036;
+wire OUT3;
+wire OUT1;
+wire A2;
+wire OUT2;
+wire A5;
 wire net28;
+wire OUT0;
+wire net31;
+wire net026;
+wire net027;
+wire net30;
+
+INV_5bit    
+ I0  ( .Vout2( net28 ), .VDD( VDD ), .Vin4( A4 ), .Vin0( A0 ), .Vin1( A1 ), .Vout1( net29 ), .Vin3( A3 ), .Vout4( net27 ), .Vout0( net30 ), .Vin2( A2 ), .Vout3( net31 ), .GND( GND ) );
 
 MUX_5bit    
  I1  ( .OUT0( OUT0 ), .VDD( VDD ), .B1( net029 ), .OUT3( OUT3 ), .A1( A1 ), .S( A5 ), .A0( A0 ), .B0( net030 ), .A2( A2 ), .OUT2( OUT2 ), .OUT1( OUT1 ), .B4( net026 ), .B2( net028 ), .A4( A4 ), .OUT4( OUT4 ), .GND( GND ), .B3( net027 ), .A3( A3 ) );
 
-FAdder_S    
- I3  ( .Cin( VDD ), .VDD( VDD ), .A1( net29 ), .S0( net030 ), .A0( net30 ), .S4( net026 ), .S3( net027 ), .A2( net28 ), .A4( net27 ), .S1( net029 ), .GND( GND ), .A3( net31 ), .S2( net028 ) );
+Adder_5bit    
+ I2  ( .Cin( VDD ), .VDD( VDD ), .B1( GND ), .A1( net29 ), .S0( net030 ), .A0( net30 ), .B0( GND ), .S4( net026 ), .S3( net027 ), .A2( net28 ), .Cout( net036 ), .B4( GND ), .B2( GND ), .A4( net27 ), .S1( net029 ), .GND( GND ), .B3( GND ), .A3( net31 ), .S2( net028 ) );
 
 endmodule
 
