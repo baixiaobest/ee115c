@@ -2,7 +2,7 @@
 // Cadence Design Systems, Inc.
 
 module INV_5bit (
-VDD,GND,Vin0,Vin1,Vin2,Vin3,Vin4,Vout0,Vout1,Vout2,Vout3,Vout4 );
+VDD,GND,Vin0,Vin1,Vin2,Vin3,Vin4,Vout0,Vout1,Vout2,Vout3,Vout4,S );
 input  VDD;
 input  GND;
 input  Vin0;
@@ -15,33 +15,35 @@ output  Vout1;
 output  Vout2;
 output  Vout3;
 output  Vout4;
-wire Vout2;
+input  S;
 wire VDD;
+wire Vout2;
 wire Vin4;
 wire Vin0;
-wire Vin1;
 wire Vout1;
+wire S;
+wire Vin1;
 wire Vin3;
-wire Vout0;
 wire Vout4;
-wire Vin2;
+wire Vout0;
 wire Vout3;
+wire Vin2;
 wire GND;
 
-INV    
- I4  ( .VDD( VDD ), .Vin( Vin4 ), .Vout( Vout4 ), .GND( GND ) );
+XOR    
+ I9  ( .VDD( VDD ), .A( Vin4 ), .B( S ), .OUT( Vout4 ), .GND( GND ) );
 
-INV    
- I3  ( .VDD( VDD ), .Vin( Vin3 ), .Vout( Vout3 ), .GND( GND ) );
+XOR    
+ I8  ( .VDD( VDD ), .A( Vin3 ), .B( S ), .OUT( Vout3 ), .GND( GND ) );
 
-INV    
- I2  ( .VDD( VDD ), .Vin( Vin2 ), .Vout( Vout2 ), .GND( GND ) );
+XOR    
+ I7  ( .VDD( VDD ), .A( Vin2 ), .B( S ), .OUT( Vout2 ), .GND( GND ) );
 
-INV    
- I1  ( .VDD( VDD ), .Vin( Vin1 ), .Vout( Vout1 ), .GND( GND ) );
+XOR    
+ I6  ( .VDD( VDD ), .A( Vin1 ), .B( S ), .OUT( Vout1 ), .GND( GND ) );
 
-INV    
- I0  ( .VDD( VDD ), .Vin( Vin0 ), .Vout( Vout0 ), .GND( GND ) );
+XOR    
+ I5  ( .VDD( VDD ), .A( Vin0 ), .B( S ), .OUT( Vout0 ), .GND( GND ) );
 
 endmodule
 

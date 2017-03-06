@@ -1,0 +1,17 @@
+(PropertyFile "1.0"
+ (Creator " HDL Direct ver ver-date" )
+ (Created " Mar  5 18:34:17 2017 " )
+ (Cell  "\\TEST_XOR\\"
+  (View  "schematic"
+   (Inst "\\I2\\"
+	(Pr
+	 ("partName" "XOR")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(1.625000,-1.125000)")
+	))
+  )
+ )
+)

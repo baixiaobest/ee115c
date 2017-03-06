@@ -1,0 +1,89 @@
+(PropertyFile "1.0"
+ (Creator " HDL Direct ver ver-date" )
+ (Created " Mar  5 18:54:27 2017 " )
+ (Cell  "\\FAdder_S\\"
+  (View  "schematic"
+   (Inst "\\I4\\"
+	(Pr
+	 ("partName" "XOR")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(9.000000,-10.500000)")
+	))
+   (Inst "\\I6\\"
+	(Pr
+	 ("partName" "XOR")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(6.875000,-6.937500)")
+	))
+   (Inst "\\I5\\"
+	(Pr
+	 ("partName" "XOR")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(11.000000,-14.062500)")
+	))
+   (Inst "\\I2\\"
+	(Pr
+	 ("partName" "XOR")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(4.250000,-3.500000)")
+	))
+   (Inst "\\I0\\"
+	(Pr
+	 ("partName" "XOR")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(2.000000,0.000000)")
+	))
+   (Inst "\\I8\\"
+	(Pr
+	 ("partName" "AND")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 14:01:23 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(4.250000,-5.312500)")
+	))
+   (Inst "\\I7\\"
+	(Pr
+	 ("partName" "AND")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 14:01:23 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(9.000000,-12.375000)")
+	))
+   (Inst "\\I3\\"
+	(Pr
+	 ("partName" "AND")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 14:01:23 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(6.875000,-8.812500)")
+	))
+   (Inst "\\I1\\"
+	(Pr
+	 ("partName" "AND")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 14:01:23 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(2.000000,-1.812500)")
+	))
+  )
+ )
+)
