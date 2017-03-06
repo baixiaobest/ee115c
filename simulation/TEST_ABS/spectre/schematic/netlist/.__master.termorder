@@ -1,0 +1,7 @@
+"project_lib.MUX_1bit.schematic.termorder" (("A" "B" "GND" "OUT" "S" "VDD") ("A" "B" "GND" "OUT" "S" "VDD"))
+"project_lib.INV.schematic.termorder" (("GND" "VDD" "Vin" "Vout") ("GND" "VDD" "Vin" "Vout"))
+"project_lib.ABS.schematic.termorder" (("A0" "A1" "A2" "A3" "A4" "A5" "GND" "OUT0" "OUT1" "OUT2" "OUT3" "OUT4" "VDD") ("A0" "A1" "A2" "A3" "A4" "A5" "GND" "OUT0" "OUT1" "OUT2" "OUT3" "OUT4" "VDD"))
+"project_lib.MUX_5bit.schematic.termorder" (("A0" "A1" "A2" "A3" "A4" "B0" "B1" "B2" "B3" "B4" "GND" "OUT0" "OUT1" "OUT2" "OUT3" "OUT4" "S" "VDD") ("A0" "A1" "A2" "A3" "A4" "B0" "B1" "B2" "B3" "B4" "GND" "OUT0" "OUT1" "OUT2" "OUT3" "OUT4" "S" "VDD"))
+"project_lib.Adder_5bit.schematic.termorder" (("A0" "A1" "A2" "A3" "A4" "B0" "B1" "B2" "B3" "B4" "Cin" "Cout" "GND" "S0" "S1" "S2" "S3" "S4" "VDD") ("A0" "A1" "A2" "A3" "A4" "B0" "B1" "B2" "B3" "B4" "Cin" "Cout" "GND" "S0" "S1" "S2" "S3" "S4" "VDD"))
+"project_lib.FAdder.schematic.termorder" (("!Cout" "A" "B" "Cin" "GND" "S" "VDD") ("!Cout" "A" "B" "Cin" "GND" "S" "VDD"))
+"project_lib.INV_5bit.schematic.termorder" (("GND" "VDD" "Vin0" "Vin1" "Vin2" "Vin3" "Vin4" "Vout0" "Vout1" "Vout2" "Vout3" "Vout4") ("GND" "VDD" "Vin0" "Vin1" "Vin2" "Vin3" "Vin4" "Vout0" "Vout1" "Vout2" "Vout3" "Vout4"))

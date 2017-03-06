@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar  5 17:23:46 2017
+// Design library name: project_lib
+// Design cell name: TEST_ABS
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

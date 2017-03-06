@@ -1,0 +1,23 @@
+    NM4 (net010 E GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM3 (net010 D GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM2 (net010 C GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM1 (net010 B GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM0 (net010 A GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    PM4 (net010 E net28 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    PM3 (net31 A VDD VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f ad=602f \
+        ps=2.71u pd=2.71u m=(1)*(1)
+    PM2 (net28 D net29 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    PM1 (net29 C net30 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    PM0 (net30 B net31 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    I0 (GND VDD net010 OUT) INV
+ends ORx5
+// End of subcircuit definition.

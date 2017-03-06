@@ -1,0 +1,8 @@
+
+// Library name: project_lib
+// Cell name: TEST_ABS
+// View name: schematic
+I0 (0 vdd! vdd! 0 0 0 vdd! A0 A1 A2 A3 A4) INV_5bit
+I3 (vdd! 0 0 0 vdd! S0 S1 S2 S3 S4 0 OUT0 OUT1 OUT2 OUT3 OUT4 vdd! vdd!) \
+        MUX_5bit
+I4 (A0 A1 A2 A3 A4 0 0 0 0 0 vdd! net056 0 S0 S1 S2 S3 S4 vdd!) Adder_5bit

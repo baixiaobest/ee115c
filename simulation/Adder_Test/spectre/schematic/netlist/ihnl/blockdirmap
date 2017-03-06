@@ -1,0 +1,4 @@
+CADENCE IHNL01072
+
+project_lib FAdder schematic cds0
+project_lib Adder_Test schematic cds1

@@ -1,0 +1,9 @@
+    NM1 (OUT net13 GND GND) gpdk090_nmos1v w=(630n) l=100n as=176.4f \
+        ad=176.4f ps=1.19u pd=1.19u m=(1)*(1)
+    NM0 (OUT B A GND) gpdk090_nmos1v w=(630n) l=100n as=176.4f ad=176.4f \
+        ps=1.19u pd=1.19u m=(1)*(1)
+    PM0 (OUT net13 A VDD) gpdk090_pmos1v w=(630n) l=100n as=176.4f \
+        ad=176.4f ps=1.19u pd=1.19u m=(1)*(1)
+    I0 (GND VDD B net13) INV
+ends AND
+// End of subcircuit definition.

@@ -1,0 +1,4 @@
+CADENCE IHNL01074
+
+project_lib MUX_1bit_TEST schematic cds2
+project_lib INV schematic cds3

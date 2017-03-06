@@ -1,0 +1,5 @@
+
+// Library name: project_lib
+// Cell name: ORx5
+// View name: schematic
+subckt ORx5 A B C D E GND OUT VDD

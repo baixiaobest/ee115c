@@ -1,0 +1,130 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 7.1.1.071 -- 20 May 2009
+Copyright (C) 1989-2009 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Protected by U.S. Patents: 
+        5,610,847; 5,790,436; 5,812,431; 5,859,785; 5,949,992; 5,987,238; 
+        6,088,523; 6,101,323; 6,151,698; 6,181,754; 6,260,176; 6,278,964; 
+        6,349,272; 6,374,390; 6,493,849; 6,504,885; 6,618,837; 6,636,839; 
+        6,778,025; 6,832,358; 6,851,097; 6,928,626; 7,024,652; 7,035,782; 
+        7,085,700; 7,143,021; 7,493,240.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: baixiao   Host: eeapps02.seas.ucla.edu   HostID: 43A4F264   PID: 98691
+Memory  available: 11.0545 GB  physical: 67.4388 GB
+CPU(1 of 32):  CPU 0  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz  1200.000MHz
+
+Simulating `input.scs' on eeapps02.seas.ucla.edu at 5:26:56 PM, Fri Feb 24, 2017 (process id: 98691).
+Command line:
+    /w/apps3/Cadence/SPB165/tools.lnx86/spectre/bin/32bit/spectre  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_97175_2 -format sst2 -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 98691
+
+Loading /w/apps3/Cadence/SPB165/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /w/apps3/Cadence/SPB165/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /w/apps3/Cadence/SPB165/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /w/apps3/Cadence/SPB165/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Auto-loading AHDL component.
+Finished loading AHDL component in 0 s (elapsed).
+Installed AHDL simulation interface.
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2419): gpdk090_pmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
+    WARNING (CMI-2477): PM0: `Rds' = 16.5957 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2419): gpdk090_nmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
+Notice from spectre during topology check.
+    No connections to node `0'.
+    No DC path from node `GND' to ground, Gmin installed to provide path.
+    No DC path from node `Vin' to ground, Gmin installed to provide path.
+
+
+Circuit inventory:
+              nodes 4
+            bsim3v3 2     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2477): PM0: `Rds' = 16.5957 uOhm is less than 0.001. Set to 0.
+
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_97175_2, ).
+
+********************************
+DC Analysis `dc': Vin = (0 -> 1)
+********************************
+
+Warning from spectre during DC analysis `dc'.
+    WARNING (CMI-2419): gpdk090_pmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
+    WARNING (CMI-2477): PM0: `Rds' = 16.5957 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2419): gpdk090_nmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
+
+Important parameter values:
+    reltol = 1e-03
+    abstol(I) = 1 pA
+    abstol(V) = 1 uV
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmin = 1 pS
+
+Warning from spectre at Vin = 50e-03 during DC analysis `dc'.
+    WARNING (CMI-2419): gpdk090_pmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
+    WARNING (CMI-2477): PM0: `Rds' = 16.5957 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2419): gpdk090_nmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
+
+    dc: Vin = 50e-03         (5 %), step = 50e-03          (5 %)
+
+Warning from spectre at Vin = 100e-03 during DC analysis `dc'.
+    WARNING (CMI-2419): gpdk090_pmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2477): PM0: `Rds' = 16.5957 uOhm is less than 0.001. Set to 0.
+
+    dc: Vin = 100e-03       (10 %), step = 50e-03          (5 %)
+
+Warning from spectre at Vin = 150e-03 during DC analysis `dc'.
+    WARNING (CMI-2477): PM0: `Rds' = 16.5957 uOhm is less than 0.001. Set to 0.
+
+    dc: Vin = 150e-03       (15 %), step = 50e-03          (5 %)
+
+Warning from spectre at Vin = 200e-03 during DC analysis `dc'.
+    WARNING (CMI-2477): PM0: `Rds' = 16.5957 uOhm is less than 0.001. Set to 0.
+        Further occurrences of this warning will be suppressed.
+
+    dc: Vin = 200e-03       (20 %), step = 50e-03          (5 %)
+    dc: Vin = 250e-03       (25 %), step = 50e-03          (5 %)
+    dc: Vin = 300e-03       (30 %), step = 50e-03          (5 %)
+    dc: Vin = 350e-03       (35 %), step = 50e-03          (5 %)
+    dc: Vin = 400e-03       (40 %), step = 50e-03          (5 %)
+    dc: Vin = 450e-03       (45 %), step = 50e-03          (5 %)
+    dc: Vin = 500e-03       (50 %), step = 50e-03          (5 %)
+    dc: Vin = 550e-03       (55 %), step = 50e-03          (5 %)
+    dc: Vin = 600e-03       (60 %), step = 50e-03          (5 %)
+    dc: Vin = 650e-03       (65 %), step = 50e-03          (5 %)
+    dc: Vin = 700e-03       (70 %), step = 50e-03          (5 %)
+    dc: Vin = 750e-03       (75 %), step = 50e-03          (5 %)
+    dc: Vin = 800e-03       (80 %), step = 50e-03          (5 %)
+    dc: Vin = 850e-03       (85 %), step = 50e-03          (5 %)
+    dc: Vin = 900e-03       (90 %), step = 50e-03          (5 %)
+    dc: Vin = 950e-03       (95 %), step = 50e-03          (5 %)
+    dc: Vin = 1            (100 %), step = 50e-03          (5 %)
+Total time required for dc analysis `dc': CPU = 10 ms, elapsed = 14.4131 ms.
+
+
+Warning from spectre.
+    WARNING (SPECTRE-6006): 53 warnings suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (5:29:03 PM, Fri Feb 24, 2017):
+Time used: CPU = 188 ms, elapsed = 127 s (2m  7.0s), util. = 148e-03%.
+Time spent in licensing: elapsed = 65.8 ms.
+Virtual memory used = 5.12 Mbytes.
+spectre completes with 0 errors, 68 warnings, and 3 notices.

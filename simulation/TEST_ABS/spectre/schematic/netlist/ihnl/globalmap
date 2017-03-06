@@ -1,0 +1,17 @@
+CADENCE IHNL01070
+$model
+project_lib/TEST_ABS/schematic TEST_ABS
+project_lib/FAdder/schematic FAdder
+project_lib/INV/schematic INV
+project_lib/MUX_1bit/schematic MUX_1bit
+project_lib/MUX_5bit/schematic MUX_5bit
+project_lib/Adder_5bit/schematic Adder_5bit
+project_lib/INV_5bit/schematic INV_5bit
+project_lib/ABS/schematic ABS
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

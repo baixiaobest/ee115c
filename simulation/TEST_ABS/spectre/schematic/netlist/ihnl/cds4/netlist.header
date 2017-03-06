@@ -1,0 +1,5 @@
+
+// Library name: project_lib
+// Cell name: FAdder
+// View name: schematic
+subckt FAdder \!Cout A B Cin GND S VDD

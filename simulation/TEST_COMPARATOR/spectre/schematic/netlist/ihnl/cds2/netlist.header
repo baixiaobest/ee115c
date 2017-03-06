@@ -1,0 +1,5 @@
+
+// Library name: project_lib
+// Cell name: NOR
+// View name: schematic
+subckt NOR A B GND OUT VDD

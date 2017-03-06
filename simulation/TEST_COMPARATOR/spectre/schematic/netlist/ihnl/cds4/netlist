@@ -1,0 +1,19 @@
+    I3 (GND VDD net033 OUT) INV
+    PM3 (net033 D VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM2 (net033 C VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM1 (net033 B VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM0 (net033 A VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    NM3 (net036 D GND GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+    NM2 (net038 C net036 GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+    NM0 (net033 A net037 GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+    NM1 (net037 B net038 GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+ends ANDx4
+// End of subcircuit definition.

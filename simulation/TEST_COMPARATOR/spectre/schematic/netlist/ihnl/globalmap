@@ -1,0 +1,18 @@
+CADENCE IHNL01070
+$model
+project_lib/ANDx4/schematic ANDx4
+project_lib/ANDx3/schematic ANDx3
+project_lib/NOR/schematic NOR
+project_lib/ORx5/schematic ORx5
+project_lib/ANDx5/schematic ANDx5
+project_lib/AND/schematic AND
+project_lib/INV/schematic INV
+project_lib/COMPARATOR/schematic COMPARATOR
+project_lib/TEST_COMPARATOR/schematic TEST_COMPARATOR
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

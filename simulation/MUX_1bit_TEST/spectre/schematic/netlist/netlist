@@ -1,0 +1,24 @@
+
+// Library name: project_lib
+// Cell name: INV
+// View name: schematic
+subckt INV GND VDD Vin Vout
+    NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+ends INV
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: MUX_1bit_TEST
+// View name: schematic
+I4 (0 vdd! 0 \!S) INV
+PM1 (OUT 0 0 vdd!) gpdk090_pmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+PM0 (OUT \!S vdd! vdd!) gpdk090_pmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+NM1 (OUT \!S 0 0) gpdk090_nmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+NM0 (OUT 0 vdd! 0) gpdk090_nmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)

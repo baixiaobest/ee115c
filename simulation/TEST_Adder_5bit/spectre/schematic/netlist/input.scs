@@ -1,0 +1,106 @@
+// Generated for: spectre
+// Generated on: Mar  5 17:39:01 2017
+// Design library name: project_lib
+// Design cell name: TEST_Adder_5bit
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/usr/public.2/ee115c/cadence-labs/gpdk090_v3.4/models/spectre/gpdk090.scs" section=NN
+
+// Library name: project_lib
+// Cell name: FAdder
+// View name: schematic
+subckt FAdder \!Cout A B Cin GND S VDD
+    NM12 (S net30 GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM11 (net024 A GND GND) gpdk090_nmos1v w=(1.29u) l=100n as=361.2f \
+        ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM10 (net025 B net024 GND) gpdk090_nmos1v w=(1.29u) l=100n as=361.2f \
+        ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM9 (net30 Cin net025 GND) gpdk090_nmos1v w=(1.29u) l=100n as=361.2f \
+        ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM8 (net19 Cin GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM7 (net19 A GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM6 (net19 B GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM5 (net30 \!Cout net19 GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM4 (\!Cout Cin net11 GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM3 (\!Cout A net059 GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM2 (net059 B GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM1 (net11 B GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM0 (net11 A GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    PM13 (S net30 VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM12 (net057 A VDD VDD) gpdk090_pmos1v w=(1.95u) l=100n as=546f \
+        ad=546f ps=2.51u pd=2.51u m=(1)*(1)
+    PM10 (net056 B net057 VDD) gpdk090_pmos1v w=(1.95u) l=100n as=546f \
+        ad=546f ps=2.51u pd=2.51u m=(1)*(1)
+    PM9 (net30 Cin net056 VDD) gpdk090_pmos1v w=(1.95u) l=100n as=546f \
+        ad=546f ps=2.51u pd=2.51u m=(1)*(1)
+    PM8 (net020 Cin VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f \
+        ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+    PM7 (net020 B VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM6 (net020 A VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM5 (net30 \!Cout net020 VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f \
+        ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+    PM4 (\!Cout A net058 VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f \
+        ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+    PM3 (net058 B VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM2 (net037 B VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM1 (net037 A VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM0 (\!Cout Cin net037 VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f \
+        ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+ends FAdder
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: INV
+// View name: schematic
+subckt INV GND VDD Vin Vout
+    NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+ends INV
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: TEST_Adder_5bit
+// View name: schematic
+I0 (C0 0 0 vdd! 0 S0 vdd!) FAdder
+I1 (C1 net100 net94 C0 0 S1 vdd!) FAdder
+I2 (C2 vdd! 0 C1 0 S2 vdd!) FAdder
+I3 (C3 net101 net102 C2 0 S3 vdd!) FAdder
+I4 (net49 0 0 C3 0 S4 vdd!) FAdder
+I12 (0 vdd! vdd! net100) INV
+I28 (0 vdd! vdd! net101) INV
+I29 (0 vdd! 0 net102) INV
+I23 (0 vdd! 0 net94) INV
+include "./_graphical_stimuli.scs"
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=1n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

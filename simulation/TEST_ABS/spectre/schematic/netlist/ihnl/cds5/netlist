@@ -1,0 +1,11 @@
+    I4 (Cout A4 B4 net50 GND S4 VDD) FAdder
+    I3 (net50 net051 net050 net19 GND S3 VDD) FAdder
+    I2 (net19 A2 B2 net20 GND S2 VDD) FAdder
+    I1 (net20 net040 net055 net56 GND S1 VDD) FAdder
+    I0 (net56 A0 B0 Cin GND S0 VDD) FAdder
+    I23 (GND VDD B1 net055) INV
+    I29 (GND VDD B3 net050) INV
+    I28 (GND VDD A3 net051) INV
+    I12 (GND VDD A1 net040) INV
+ends Adder_5bit
+// End of subcircuit definition.

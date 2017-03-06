@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"NM12n NM11n NM10n NM9n NM8n NM7n NM6n NM5n NM4n NM3n NM2n NM1n NM0n" "gpdk090_nmos1v_spectre"
+"PM13n PM12n PM10n PM9n PM8n PM7n PM6n PM5n PM4n PM3n PM2n PM1n PM0n" "gpdk090_pmos1v_spectre"
+"!Coutv" ":1v"
+"Av" ":2v"
+"Bv" ":3v"
+"Cinv" ":4v"
+"GNDv" ":5v"
+"Sv" ":6v"
+"VDDv" ":7v"

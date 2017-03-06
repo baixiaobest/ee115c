@@ -1,0 +1,53 @@
+(PropertyFile "1.0"
+ (Creator " HDL Direct ver ver-date" )
+ (Created " Mar  2 19:10:30 2017 " )
+ (Cell  "\\INV_5bit\\"
+  (View  "schematic"
+   (Inst "\\I4\\"
+	(Pr
+	 ("partName" "INV")
+	 ("vendorName" "")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-3.437500)")
+	))
+   (Inst "\\I3\\"
+	(Pr
+	 ("partName" "INV")
+	 ("vendorName" "")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-2.437500)")
+	))
+   (Inst "\\I2\\"
+	(Pr
+	 ("partName" "INV")
+	 ("vendorName" "")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-1.437500)")
+	))
+   (Inst "\\I1\\"
+	(Pr
+	 ("partName" "INV")
+	 ("vendorName" "")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,-0.437500)")
+	))
+   (Inst "\\I0\\"
+	(Pr
+	 ("partName" "INV")
+	 ("vendorName" "")
+	 ("portOrder" "(\"Vout\" \"GND\" \"VDD\" \"Vin\")")
+	 ("interfaceLastChanged" "Feb 24 17:30:17 2017")
+	 ("\\pin#\\" "4")
+	 ("XY" "(3.437500,0.562500)")
+	))
+  )
+ )
+)

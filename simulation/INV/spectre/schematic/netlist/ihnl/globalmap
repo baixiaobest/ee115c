@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+project_lib/INV/schematic INV
+$endmodel
+$net
+$endnet
+$param
+VDD VDD
+GND GND
+Vin Vin
+$endparam

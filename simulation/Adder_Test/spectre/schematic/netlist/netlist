@@ -1,0 +1,68 @@
+
+// Library name: project_lib
+// Cell name: FAdder
+// View name: schematic
+subckt FAdder \!Cout A B Cin GND S VDD
+    NM12 (S net30 GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM11 (net024 A GND GND) gpdk090_nmos1v w=(1.29u) l=100n as=361.2f \
+        ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM10 (net025 B net024 net024) gpdk090_nmos1v w=(1.29u) l=100n \
+        as=361.2f ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM9 (net30 Cin net025 net025) gpdk090_nmos1v w=(1.29u) l=100n \
+        as=361.2f ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM8 (net19 Cin GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM7 (net19 A GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM6 (net19 B GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM5 (net30 \!Cout net19 net19) gpdk090_nmos1v w=(860n) l=100n \
+        as=240.8f ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM4 (\!Cout Cin net11 net11) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM3 (\!Cout A net14 net14) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM2 (net14 B GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM1 (net11 B GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM0 (net11 A GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    PM13 (S net30 VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM12 (net029 A VDD VDD) gpdk090_pmos1v w=(1.95u) l=100n as=546f \
+        ad=546f ps=2.51u pd=2.51u m=(1)*(1)
+    PM10 (net028 B net029 net029) gpdk090_pmos1v w=(1.95u) l=100n as=546f \
+        ad=546f ps=2.51u pd=2.51u m=(1)*(1)
+    PM9 (net30 Cin net028 net028) gpdk090_pmos1v w=(1.95u) l=100n as=546f \
+        ad=546f ps=2.51u pd=2.51u m=(1)*(1)
+    PM8 (net020 Cin VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f \
+        ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+    PM7 (net020 B VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM6 (net020 A VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM5 (net30 \!Cout net020 net020) gpdk090_pmos1v w=(1.3u) l=100n \
+        as=364f ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+    PM4 (\!Cout A net16 net16) gpdk090_pmos1v w=(1.3u) l=100n as=364f \
+        ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+    PM3 (net16 B VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM2 (net10 B VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM1 (net10 A VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM0 (\!Cout Cin net10 net10) gpdk090_pmos1v w=(1.3u) l=100n as=364f \
+        ad=364f ps=1.86u pd=1.86u m=(1)*(1)
+ends FAdder
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: Adder_Test
+// View name: schematic
+I0 (V!Cout vdd! B Vin 0 Sum vdd!) FAdder
+V6 (B 0) vsource type=pulse val0=0 val1=0 period=1n delay=600p rise=10p \
+        fall=10p width=500p
+VCin (Vin 0) vsource type=pulse val0=0 val1=1 period=2n delay=0 rise=10p \
+        fall=10p width=1n

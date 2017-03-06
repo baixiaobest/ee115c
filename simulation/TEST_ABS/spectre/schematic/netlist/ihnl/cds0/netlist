@@ -1,0 +1,6 @@
+    NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+ends INV
+// End of subcircuit definition.

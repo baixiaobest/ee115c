@@ -1,0 +1,9 @@
+CADENCE IHNL01078
+
+project_lib INV schematic cds0
+project_lib INV_5bit schematic cds1
+project_lib MUX_1bit schematic cds2
+project_lib MUX_5bit schematic cds3
+project_lib FAdder schematic cds4
+project_lib Adder_5bit schematic cds5
+project_lib TEST_ABS schematic cds7

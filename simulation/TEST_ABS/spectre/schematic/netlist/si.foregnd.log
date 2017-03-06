@@ -1,0 +1,18 @@
+Begin Incremental Netlisting Mar  5 17:10:08 2017
+End netlisting Mar  5 17:10:09 2017
+Begin Incremental Netlisting Mar  5 17:15:34 2017
+End netlisting Mar  5 17:15:34 2017
+Begin Incremental Netlisting Mar  5 17:20:27 2017
+ERROR (OSSHNL-109): The cell view, 'project_lib/TEST_ABS/schematic', has been
+modified since the last extraction.
+Re-extract the design (File->Check and Save
+menu option) for schematic cell
+views to correct this error.
+
+End netlisting Mar  5 17:20:27 2017
+Begin Incremental Netlisting Mar  5 17:21:01 2017
+End netlisting Mar  5 17:21:01 2017
+Begin Incremental Netlisting Mar  5 17:22:24 2017
+End netlisting Mar  5 17:22:24 2017
+Begin Incremental Netlisting Mar  5 17:23:46 2017
+End netlisting Mar  5 17:23:47 2017

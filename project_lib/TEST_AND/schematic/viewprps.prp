@@ -1,0 +1,17 @@
+(PropertyFile "1.0"
+ (Creator " HDL Direct ver ver-date" )
+ (Created " Mar  5 14:12:17 2017 " )
+ (Cell  "\\TEST_AND\\"
+  (View  "schematic"
+   (Inst "\\I0\\"
+	(Pr
+	 ("partName" "AND")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 14:01:23 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(1.875000,-0.875000)")
+	))
+  )
+ )
+)

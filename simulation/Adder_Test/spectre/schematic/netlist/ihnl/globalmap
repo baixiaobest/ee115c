@@ -1,0 +1,14 @@
+CADENCE IHNL01070
+$model
+project_lib/FAdder/schematic FAdder
+project_lib/Adder_Test/schematic Adder_Test
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+vdd vdd
+VA VA
+p _gpar0
+$endparam

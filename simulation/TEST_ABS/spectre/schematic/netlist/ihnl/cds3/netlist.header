@@ -1,0 +1,6 @@
+
+// Library name: project_lib
+// Cell name: MUX_5bit
+// View name: schematic
+subckt MUX_5bit A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 GND OUT0 OUT1 OUT2 OUT3 OUT4 \
+        S VDD

@@ -1,0 +1,7 @@
+    I4 (GND VDD Vin4 Vout4) INV
+    I3 (GND VDD Vin3 Vout3) INV
+    I2 (GND VDD Vin2 Vout2) INV
+    I1 (GND VDD Vin1 Vout1) INV
+    I0 (GND VDD Vin0 Vout0) INV
+ends INV_5bit
+// End of subcircuit definition.

@@ -1,0 +1,38 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TEST_ABS"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/w/home.04/cs/ugrad/baixiao/Desktop/ee115c/Project/simulation/TEST_ABS/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "project_lib/Adder_5bit/schematic" "Adder_5bit" )
+( "project_lib/INV_5bit/schematic" "INV_5bit" )
+( "project_lib/MUX_5bit/schematic" "MUX_5bit" )
+( "project_lib/MUX_1bit/schematic" "MUX_1bit" )
+( "project_lib/INV/schematic" "INV" )
+( "project_lib/FAdder/schematic" "FAdder" )
+( "project_lib/TEST_ABS/schematic" "TEST_ABS" )
+ )
+( term
+ )
+( param
+ )
+( "MUX_5bit" "ihnl/cds3/map" )
+( "Adder_5bit" "ihnl/cds5/map" )
+( "FAdder" "ihnl/cds4/map" )
+( "MUX_1bit" "ihnl/cds2/map" )
+( "TEST_ABS" "ihnl/cds7/map" )
+( "INV" "ihnl/cds0/map" )
+( "INV_5bit" "ihnl/cds1/map" )
+ )

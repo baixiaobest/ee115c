@@ -1,0 +1,5 @@
+
+// Library name: project_lib
+// Cell name: ANDx4
+// View name: schematic
+subckt ANDx4 A B C D GND OUT VDD

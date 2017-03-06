@@ -1,0 +1,13 @@
+
+// Library name: project_lib
+// Cell name: TEST_Adder_5bit
+// View name: schematic
+I0 (C0 0 0 vdd! 0 S0 vdd!) FAdder
+I1 (C1 net100 net94 C0 0 S1 vdd!) FAdder
+I2 (C2 vdd! 0 C1 0 S2 vdd!) FAdder
+I3 (C3 net101 net102 C2 0 S3 vdd!) FAdder
+I4 (net49 0 0 C3 0 S4 vdd!) FAdder
+I12 (0 vdd! vdd! net100) INV
+I28 (0 vdd! vdd! net101) INV
+I29 (0 vdd! 0 net102) INV
+I23 (0 vdd! 0 net94) INV

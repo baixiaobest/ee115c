@@ -1,0 +1,13 @@
+
+// Library name: project_lib
+// Cell name: MUX_1bit_TEST
+// View name: schematic
+I4 (0 vdd! 0 \!S) INV
+PM1 (OUT 0 0 vdd!) gpdk090_pmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+PM0 (OUT \!S vdd! vdd!) gpdk090_pmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+NM1 (OUT \!S 0 0) gpdk090_nmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+NM0 (OUT 0 vdd! 0) gpdk090_nmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)

@@ -1,0 +1,8 @@
+"project_lib.INV.schematic.termorder" (("GND" "VDD" "Vin" "Vout") ("GND" "VDD" "Vin" "Vout"))
+"project_lib.AND.schematic.termorder" (("A" "B" "GND" "OUT" "VDD") ("A" "B" "GND" "OUT" "VDD"))
+"project_lib.ORx5.schematic.termorder" (("A" "B" "C" "D" "E" "GND" "OUT" "VDD") ("A" "B" "C" "D" "E" "GND" "OUT" "VDD"))
+"project_lib.COMPARATOR.schematic.termorder" (("A0" "A1" "A2" "A3" "A4" "B0" "B1" "B2" "B3" "B4" "GND" "OUT" "VDD") ("A0" "A1" "A2" "A3" "A4" "B0" "B1" "B2" "B3" "B4" "GND" "OUT" "VDD"))
+"project_lib.ANDx5.schematic.termorder" (("A" "B" "C" "D" "E" "GND" "OUT" "VDD") ("A" "B" "C" "D" "E" "GND" "OUT" "VDD"))
+"project_lib.ANDx4.schematic.termorder" (("A" "B" "C" "D" "GND" "OUT" "VDD") ("A" "B" "C" "D" "GND" "OUT" "VDD"))
+"project_lib.NOR.schematic.termorder" (("A" "B" "GND" "OUT" "VDD") ("A" "B" "GND" "OUT" "VDD"))
+"project_lib.ANDx3.schematic.termorder" (("A" "B" "C" "GND" "OUT" "VDD") ("A" "B" "C" "GND" "OUT" "VDD"))

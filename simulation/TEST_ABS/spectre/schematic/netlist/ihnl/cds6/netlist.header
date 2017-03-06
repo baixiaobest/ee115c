@@ -1,0 +1,5 @@
+
+// Library name: project_lib
+// Cell name: ABS
+// View name: schematic
+subckt ABS A0 A1 A2 A3 A4 A5 GND OUT0 OUT1 OUT2 OUT3 OUT4 VDD

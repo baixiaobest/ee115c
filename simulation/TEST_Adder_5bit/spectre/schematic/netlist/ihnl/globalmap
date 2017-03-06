@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+project_lib/FAdder/schematic FAdder
+project_lib/INV/schematic INV
+project_lib/TEST_Adder_5bit/schematic TEST_Adder_5bit
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

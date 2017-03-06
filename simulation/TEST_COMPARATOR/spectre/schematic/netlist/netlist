@@ -1,0 +1,179 @@
+
+// Library name: project_lib
+// Cell name: INV
+// View name: schematic
+subckt INV GND VDD Vin Vout
+    NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+ends INV
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: AND
+// View name: schematic
+subckt AND A B GND OUT VDD
+    NM1 (OUT net13 GND GND) gpdk090_nmos1v w=(630n) l=100n as=176.4f \
+        ad=176.4f ps=1.19u pd=1.19u m=(1)*(1)
+    NM0 (OUT B A GND) gpdk090_nmos1v w=(630n) l=100n as=176.4f ad=176.4f \
+        ps=1.19u pd=1.19u m=(1)*(1)
+    PM0 (OUT net13 A VDD) gpdk090_pmos1v w=(630n) l=100n as=176.4f \
+        ad=176.4f ps=1.19u pd=1.19u m=(1)*(1)
+    I0 (GND VDD B net13) INV
+ends AND
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: NOR
+// View name: schematic
+subckt NOR A B GND OUT VDD
+    NM1 (OUT B GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+    NM0 (OUT A GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f ad=120.4f \
+        ps=990n pd=990n m=(1)*(1)
+    PM1 (OUT B net15 VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+    PM0 (net15 A VDD VDD) gpdk090_pmos1v w=(1.3u) l=100n as=364f ad=364f \
+        ps=1.86u pd=1.86u m=(1)*(1)
+ends NOR
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: ANDx3
+// View name: schematic
+subckt ANDx3 A B C GND OUT VDD
+    NM2 (net17 C GND GND) gpdk090_nmos1v w=(1.29u) l=100n as=361.2f \
+        ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM1 (net16 B net17 GND) gpdk090_nmos1v w=(1.29u) l=100n as=361.2f \
+        ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    NM0 (net09 A net16 GND) gpdk090_nmos1v w=(1.29u) l=100n as=361.2f \
+        ad=361.2f ps=1.85u pd=1.85u m=(1)*(1)
+    PM2 (net09 C VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM1 (net09 B VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM0 (net09 A VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    I3 (GND VDD net09 OUT) INV
+ends ANDx3
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: ANDx4
+// View name: schematic
+subckt ANDx4 A B C D GND OUT VDD
+    I3 (GND VDD net033 OUT) INV
+    PM3 (net033 D VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM2 (net033 C VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM1 (net033 B VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM0 (net033 A VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    NM3 (net036 D GND GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+    NM2 (net038 C net036 GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+    NM0 (net033 A net037 GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+    NM1 (net037 B net038 GND) gpdk090_nmos1v w=(1.72u) l=100n as=481.6f \
+        ad=481.6f ps=2.28u pd=2.28u m=(1)*(1)
+ends ANDx4
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: ANDx5
+// View name: schematic
+subckt ANDx5 A B C D E GND OUT VDD
+    PM4 (net043 E VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM3 (net043 D VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM2 (net043 C VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM1 (net043 B VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM0 (net043 A VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    NM4 (net046 E GND GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f ad=602f \
+        ps=2.71u pd=2.71u m=(1)*(1)
+    NM3 (net047 D net046 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    NM1 (net049 B net048 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    NM2 (net048 C net047 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    NM0 (net043 A net049 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    I3 (GND VDD net043 OUT) INV
+ends ANDx5
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: ORx5
+// View name: schematic
+subckt ORx5 A B C D E GND OUT VDD
+    NM4 (net010 E GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM3 (net010 D GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM2 (net010 C GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM1 (net010 B GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    NM0 (net010 A GND GND) gpdk090_nmos1v w=(430n) l=100n as=120.4f \
+        ad=120.4f ps=990n pd=990n m=(1)*(1)
+    PM4 (net010 E net28 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    PM3 (net31 A VDD VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f ad=602f \
+        ps=2.71u pd=2.71u m=(1)*(1)
+    PM2 (net28 D net29 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    PM1 (net29 C net30 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    PM0 (net30 B net31 VDD) gpdk090_pmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    I0 (GND VDD net010 OUT) INV
+ends ORx5
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: COMPARATOR
+// View name: schematic
+subckt COMPARATOR A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 GND OUT VDD
+    I26 (GND VDD B3 net58) INV
+    I28 (GND VDD A3 net59) INV
+    I38 (GND VDD B0 net48) INV
+    I36 (GND VDD A1 net51) INV
+    I30 (GND VDD B2 net56) INV
+    I32 (GND VDD A2 net54) INV
+    I34 (GND VDD B1 net52) INV
+    I1 (GND VDD B4 net62) INV
+    I0 (GND VDD A4 net61) INV
+    I47 (net71 net38 GND net060 VDD) AND
+    I29 (net59 B3 GND net39 VDD) AND
+    I27 (net58 A3 GND net38 VDD) AND
+    I37 (net51 B1 GND net35 VDD) AND
+    I39 (A0 net48 GND net42 VDD) AND
+    I10 (net62 A4 GND net40 VDD) AND
+    I9 (net61 B4 GND net41 VDD) AND
+    I35 (net52 A1 GND net34 VDD) AND
+    I31 (net56 A2 GND net36 VDD) AND
+    I33 (net54 B2 GND net37 VDD) AND
+    I45 (net34 net35 GND net67 VDD) NOR
+    I44 (net37 net36 GND net68 VDD) NOR
+    I42 (net41 net40 GND net71 VDD) NOR
+    I43 (net38 net39 GND net69 VDD) NOR
+    I48 (net71 net69 net36 GND net063 VDD) ANDx3
+    I49 (net71 net69 net68 net34 GND net059 VDD) ANDx4
+    I50 (net42 net67 net68 net69 net71 GND net062 VDD) ANDx5
+    I51 (net40 net060 net063 net059 net062 GND OUT VDD) ORx5
+ends COMPARATOR
+// End of subcircuit definition.
+
+// Library name: project_lib
+// Cell name: TEST_COMPARATOR
+// View name: schematic
+I0 (vdd! vdd! vdd! 0 0 vdd! vdd! vdd! 0 0 0 OUT vdd!) COMPARATOR

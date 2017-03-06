@@ -1,0 +1,6 @@
+
+// Library name: project_lib
+// Cell name: INV_5bit
+// View name: schematic
+subckt INV_5bit GND VDD Vin0 Vin1 Vin2 Vin3 Vin4 Vout0 Vout1 Vout2 Vout3 \
+        Vout4

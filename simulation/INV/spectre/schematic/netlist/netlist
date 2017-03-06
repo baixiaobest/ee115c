@@ -1,0 +1,8 @@
+
+// Library name: project_lib
+// Cell name: INV
+// View name: schematic
+NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=800n pd=800n m=(1)*(1)
+PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(480n) l=100n as=134.4f ad=134.4f \
+        ps=1.04u pd=1.04u m=(1)*(1)

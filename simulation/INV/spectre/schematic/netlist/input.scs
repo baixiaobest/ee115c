@@ -1,0 +1,30 @@
+// Generated for: spectre
+// Generated on: Feb 24 17:24:59 2017
+// Design library name: project_lib
+// Design cell name: INV
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters VDD=1 GND=0 Vin=1
+include "/usr/public.2/ee115c/cadence-labs/gpdk090_v3.4/models/spectre/gpdk090.scs" section=NN
+
+// Library name: project_lib
+// Cell name: INV
+// View name: schematic
+NM0 (Vout Vin GND GND) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=800n pd=800n m=(1)*(1)
+PM0 (Vout Vin VDD VDD) gpdk090_pmos1v w=(480n) l=100n as=134.4f ad=134.4f \
+        ps=1.04u pd=1.04u m=(1)*(1)
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dc dc param=Vin start=0 stop=1 step=0.05 write="spectre.dc" \
+    oppoint=rawfile maxiters=150 maxsteps=10000 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

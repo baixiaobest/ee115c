@@ -1,0 +1,5 @@
+
+// Library name: project_lib
+// Cell name: INV
+// View name: schematic
+subckt INV GND VDD Vin Vout

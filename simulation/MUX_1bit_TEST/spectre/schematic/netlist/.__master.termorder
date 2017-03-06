@@ -1,0 +1,2 @@
+"project_lib.MUX_1bit.schematic.termorder" (("A" "B" "GND" "OUT" "S" "VDD") ("A" "B" "GND" "OUT" "S" "VDD"))
+"project_lib.INV.schematic.termorder" (("GND" "VDD" "Vin" "Vout") ("GND" "VDD" "Vin" "Vout"))

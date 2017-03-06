@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TEST_Adder_5bit"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/w/home.04/cs/ugrad/baixiao/Desktop/ee115c/Project/simulation/TEST_Adder_5bit/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "project_lib/TEST_Adder_5bit/schematic" "TEST_Adder_5bit" )
+( "project_lib/INV/schematic" "INV" )
+( "project_lib/FAdder/schematic" "FAdder" )
+ )
+( term
+ )
+( param
+ )
+( "TEST_Adder_5bit" "ihnl/cds2/map" )
+( "FAdder" "ihnl/cds0/map" )
+( "INV" "ihnl/cds1/map" )
+ )

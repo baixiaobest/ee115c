@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"project_lib\" \"MUX_1bit_TEST\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Mar  2 18:30:17 2017"
+"title" ""
+"analysisList" "()"
+END

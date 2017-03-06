@@ -1,0 +1,42 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TEST_COMPARATOR"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/w/home.04/cs/ugrad/baixiao/Desktop/ee115c/Project/simulation/TEST_COMPARATOR/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "project_lib/TEST_COMPARATOR/schematic" "TEST_COMPARATOR" )
+( "project_lib/AND/schematic" "AND" )
+( "project_lib/ANDx3/schematic" "ANDx3" )
+( "project_lib/ORx5/schematic" "ORx5" )
+( "project_lib/ANDx5/schematic" "ANDx5" )
+( "project_lib/ANDx4/schematic" "ANDx4" )
+( "project_lib/INV/schematic" "INV" )
+( "project_lib/NOR/schematic" "NOR" )
+( "project_lib/COMPARATOR/schematic" "COMPARATOR" )
+ )
+( term
+ )
+( param
+ )
+( "TEST_COMPARATOR" "ihnl/cds8/map" )
+( "COMPARATOR" "ihnl/cds7/map" )
+( "ANDx4" "ihnl/cds4/map" )
+( "ANDx3" "ihnl/cds3/map" )
+( "AND" "ihnl/cds1/map" )
+( "ANDx5" "ihnl/cds5/map" )
+( "ORx5" "ihnl/cds6/map" )
+( "INV" "ihnl/cds0/map" )
+( "NOR" "ihnl/cds2/map" )
+ )

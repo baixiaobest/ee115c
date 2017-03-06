@@ -1,0 +1,9 @@
+
+// Library name: project_lib
+// Cell name: Adder_Test
+// View name: schematic
+I0 (V!Cout vdd! B Vin 0 Sum vdd!) FAdder
+V6 (B 0) vsource type=pulse val0=0 val1=0 period=1n delay=600p rise=10p \
+        fall=10p width=500p
+VCin (Vin 0) vsource type=pulse val0=0 val1=1 period=2n delay=0 rise=10p \
+        fall=10p width=1n

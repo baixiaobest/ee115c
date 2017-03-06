@@ -1,0 +1,3 @@
+projectDir = '"./Project/simulation"
+designInfo = '("project_lib" "Adder_Test" "schematic" "spectre")
+descriptionText = "None"

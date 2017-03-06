@@ -1,0 +1,7 @@
+    I4 (A4 B4 GND OUT4 S VDD) MUX_1bit
+    I3 (A3 B3 GND OUT3 S VDD) MUX_1bit
+    I2 (A2 B2 GND OUT2 S VDD) MUX_1bit
+    I1 (A1 B1 GND OUT1 S VDD) MUX_1bit
+    I0 (A0 B0 GND OUT0 S VDD) MUX_1bit
+ends MUX_5bit
+// End of subcircuit definition.

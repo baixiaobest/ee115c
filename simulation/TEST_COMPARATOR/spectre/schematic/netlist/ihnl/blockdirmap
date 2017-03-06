@@ -1,0 +1,11 @@
+CADENCE IHNL01079
+
+project_lib INV schematic cds0
+project_lib AND schematic cds1
+project_lib NOR schematic cds2
+project_lib ANDx3 schematic cds3
+project_lib ANDx4 schematic cds4
+project_lib ANDx5 schematic cds5
+project_lib ORx5 schematic cds6
+project_lib COMPARATOR schematic cds7
+project_lib TEST_COMPARATOR schematic cds8

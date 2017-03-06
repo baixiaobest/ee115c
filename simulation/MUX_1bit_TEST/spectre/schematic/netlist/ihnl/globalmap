@@ -1,0 +1,15 @@
+CADENCE IHNL01070
+$model
+project_lib/INV/schematic INV
+project_lib/MUX_1bit/schematic MUX_1bit
+project_lib/MUX_1bit_TEST/schematic MUX_1bit_TEST
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+V1 V1
+V0 V0
+n _gpar0
+$endparam

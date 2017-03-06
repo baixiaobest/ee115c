@@ -1,0 +1,124 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "7.1.1.071"
+"date" "5:23:49 PM, Sun Mar 5, 2017"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unsorted"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"gpdk090_ndio" "subckt" (
+""
+""
+)
+"gpdk090_ndio_na25" "subckt" (
+""
+""
+)
+"INV_5bit" "subckt" (
+""
+"GND VDD Vin0 Vin1 Vin2 Vin3 Vin4 Vout0 Vout1 Vout2 Vout3 Vout4"
+)
+"gpdk090_nwdio" "subckt" (
+""
+""
+)
+"ressnpoly" "subckt" (
+""
+""
+)
+"gpdk090_nmos1v_iso" "subckt" (
+""
+""
+)
+"resnwoxide" "subckt" (
+""
+""
+)
+"resnwsti" "subckt" (
+""
+""
+)
+"resnspdiff" "subckt" (
+""
+""
+)
+"FAdder" "subckt" (
+""
+"!Cout A B Cin GND S VDD"
+)
+"ressndiff" "subckt" (
+""
+""
+)
+"resnsnpoly" "subckt" (
+""
+""
+)
+"resspdiff" "subckt" (
+""
+""
+)
+"INV" "subckt" (
+""
+"GND VDD Vin Vout"
+)
+"MUX_1bit" "subckt" (
+""
+"A B GND OUT S VDD"
+)
+"gpdk090_ndio_25" "subckt" (
+""
+""
+)
+"gpdk090_pdio_25" "subckt" (
+""
+""
+)
+"MUX_5bit" "subckt" (
+""
+"A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 GND OUT0 OUT1 OUT2 OUT3 OUT4 S VDD"
+)
+"gpdk090_pdio_hvt" "subckt" (
+""
+""
+)
+"gpdk090_resnsndiff" "subckt" (
+""
+""
+)
+"gpdk090_ndio_na" "subckt" (
+""
+""
+)
+"gpdk090_ndio_hvt" "subckt" (
+""
+""
+)
+"Adder_5bit" "subckt" (
+""
+"A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 Cin Cout GND S0 S1 S2 S3 S4 VDD"
+)
+"resnsppoly" "subckt" (
+""
+""
+)
+"gpdk090_pdio" "subckt" (
+""
+""
+)
+"ressppoly" "subckt" (
+""
+""
+)
+END

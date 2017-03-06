@@ -1,0 +1,29 @@
+    I26 (GND VDD B3 net58) INV
+    I28 (GND VDD A3 net59) INV
+    I38 (GND VDD B0 net48) INV
+    I36 (GND VDD A1 net51) INV
+    I30 (GND VDD B2 net56) INV
+    I32 (GND VDD A2 net54) INV
+    I34 (GND VDD B1 net52) INV
+    I1 (GND VDD B4 net62) INV
+    I0 (GND VDD A4 net61) INV
+    I47 (net71 net38 GND net060 VDD) AND
+    I29 (net59 B3 GND net39 VDD) AND
+    I27 (net58 A3 GND net38 VDD) AND
+    I37 (net51 B1 GND net35 VDD) AND
+    I39 (A0 net48 GND net42 VDD) AND
+    I10 (net62 A4 GND net40 VDD) AND
+    I9 (net61 B4 GND net41 VDD) AND
+    I35 (net52 A1 GND net34 VDD) AND
+    I31 (net56 A2 GND net36 VDD) AND
+    I33 (net54 B2 GND net37 VDD) AND
+    I45 (net34 net35 GND net67 VDD) NOR
+    I44 (net37 net36 GND net68 VDD) NOR
+    I42 (net41 net40 GND net71 VDD) NOR
+    I43 (net38 net39 GND net69 VDD) NOR
+    I48 (net71 net69 net36 GND net063 VDD) ANDx3
+    I49 (net71 net69 net68 net34 GND net059 VDD) ANDx4
+    I50 (net42 net67 net68 net69 net71 GND net062 VDD) ANDx5
+    I51 (net40 net060 net063 net059 net062 GND OUT VDD) ORx5
+ends COMPARATOR
+// End of subcircuit definition.

@@ -1,0 +1,29 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "MUX_1bit_TEST"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/w/home.04/cs/ugrad/baixiao/Desktop/ee115c/Project/simulation/MUX_1bit_TEST/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "project_lib/INV/schematic" "INV" )
+( "project_lib/MUX_1bit_TEST/schematic" "MUX_1bit_TEST" )
+ )
+( term
+ )
+( param
+( "n" "_gpar0" )
+ )
+( "MUX_1bit_TEST" "ihnl/cds2/map" )
+( "INV" "ihnl/cds3/map" )
+ )

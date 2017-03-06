@@ -1,0 +1,2 @@
+"project_lib.INV.schematic.termorder" (("GND" "VDD" "Vin" "Vout") ("GND" "VDD" "Vin" "Vout"))
+"project_lib.FAdder.schematic.termorder" (("!Cout" "A" "B" "Cin" "GND" "S" "VDD") ("!Cout" "A" "B" "Cin" "GND" "S" "VDD"))
