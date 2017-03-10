@@ -1,0 +1,22 @@
+    PM4 (OUT E VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM3 (OUT D VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM2 (OUT C VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM1 (OUT B VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM0 (OUT A VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    NM4 (net102 E GND GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f ad=602f \
+        ps=2.71u pd=2.71u m=(1)*(1)
+    NM3 (net99 D net102 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    NM1 (net100 B net101 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    NM2 (net101 C net99 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f \
+        ad=602f ps=2.71u pd=2.71u m=(1)*(1)
+    NM0 (OUT A net100 GND) gpdk090_nmos1v w=(2.15u) l=100n as=602f ad=602f \
+        ps=2.71u pd=2.71u m=(1)*(1)
+ends NANDx5
+// End of subcircuit definition.

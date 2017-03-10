@@ -20,9 +20,9 @@ wire VDD;
 wire net34;
 wire net59;
 wire A0;
-wire net059;
 wire net39;
 wire net36;
+wire net059;
 wire GND;
 wire OUT;
 wire A3;
@@ -46,15 +46,21 @@ wire net71;
 wire net062;
 wire net62;
 wire net38;
-wire net67;
+wire net56;
 wire B0;
+wire net67;
 wire net54;
 wire net35;
-wire net56;
 wire net42;
-wire B4;
 wire net58;
+wire B4;
 wire B3;
+
+INV    
+ I26  ( .VDD( VDD ), .Vin( B3 ), .Vout( net58 ), .GND( GND ) );
+
+INV    
+ I28  ( .VDD( VDD ), .Vin( A3 ), .Vout( net59 ), .GND( GND ) );
 
 INV    
  I38  ( .VDD( VDD ), .Vin( B0 ), .Vout( net48 ), .GND( GND ) );
@@ -63,19 +69,13 @@ INV
  I36  ( .VDD( VDD ), .Vin( A1 ), .Vout( net51 ), .GND( GND ) );
 
 INV    
- I34  ( .VDD( VDD ), .Vin( B1 ), .Vout( net52 ), .GND( GND ) );
+ I30  ( .VDD( VDD ), .Vin( B2 ), .Vout( net56 ), .GND( GND ) );
 
 INV    
  I32  ( .VDD( VDD ), .Vin( A2 ), .Vout( net54 ), .GND( GND ) );
 
 INV    
- I30  ( .VDD( VDD ), .Vin( B2 ), .Vout( net56 ), .GND( GND ) );
-
-INV    
- I28  ( .VDD( VDD ), .Vin( A3 ), .Vout( net59 ), .GND( GND ) );
-
-INV    
- I26  ( .VDD( VDD ), .Vin( B3 ), .Vout( net58 ), .GND( GND ) );
+ I34  ( .VDD( VDD ), .Vin( B1 ), .Vout( net52 ), .GND( GND ) );
 
 INV    
  I1  ( .VDD( VDD ), .Vin( B4 ), .Vout( net62 ), .GND( GND ) );
@@ -87,31 +87,31 @@ AND
  I47  ( .VDD( VDD ), .A( net71 ), .B( net38 ), .OUT( net060 ), .GND( GND ) );
 
 AND    
- I39  ( .VDD( VDD ), .A( A0 ), .B( net48 ), .OUT( net42 ), .GND( GND ) );
-
-AND    
- I37  ( .VDD( VDD ), .A( net51 ), .B( B1 ), .OUT( net35 ), .GND( GND ) );
-
-AND    
- I35  ( .VDD( VDD ), .A( net52 ), .B( A1 ), .OUT( net34 ), .GND( GND ) );
-
-AND    
- I33  ( .VDD( VDD ), .A( net54 ), .B( B2 ), .OUT( net37 ), .GND( GND ) );
-
-AND    
- I31  ( .VDD( VDD ), .A( net56 ), .B( A2 ), .OUT( net36 ), .GND( GND ) );
-
-AND    
  I29  ( .VDD( VDD ), .A( net59 ), .B( B3 ), .OUT( net39 ), .GND( GND ) );
 
 AND    
  I27  ( .VDD( VDD ), .A( net58 ), .B( A3 ), .OUT( net38 ), .GND( GND ) );
 
 AND    
+ I37  ( .VDD( VDD ), .A( net51 ), .B( B1 ), .OUT( net35 ), .GND( GND ) );
+
+AND    
+ I39  ( .VDD( VDD ), .A( A0 ), .B( net48 ), .OUT( net42 ), .GND( GND ) );
+
+AND    
  I10  ( .VDD( VDD ), .A( net62 ), .B( A4 ), .OUT( net40 ), .GND( GND ) );
 
 AND    
  I9  ( .VDD( VDD ), .A( net61 ), .B( B4 ), .OUT( net41 ), .GND( GND ) );
+
+AND    
+ I35  ( .VDD( VDD ), .A( net52 ), .B( A1 ), .OUT( net34 ), .GND( GND ) );
+
+AND    
+ I31  ( .VDD( VDD ), .A( net56 ), .B( A2 ), .OUT( net36 ), .GND( GND ) );
+
+AND    
+ I33  ( .VDD( VDD ), .A( net54 ), .B( B2 ), .OUT( net37 ), .GND( GND ) );
 
 NOR    
  I45  ( .VDD( VDD ), .A( net34 ), .B( net35 ), .OUT( net67 ), .GND( GND ) );
@@ -120,10 +120,10 @@ NOR
  I44  ( .VDD( VDD ), .A( net37 ), .B( net36 ), .OUT( net68 ), .GND( GND ) );
 
 NOR    
- I43  ( .VDD( VDD ), .A( net38 ), .B( net39 ), .OUT( net69 ), .GND( GND ) );
+ I42  ( .VDD( VDD ), .A( net41 ), .B( net40 ), .OUT( net71 ), .GND( GND ) );
 
 NOR    
- I42  ( .VDD( VDD ), .A( net41 ), .B( net40 ), .OUT( net71 ), .GND( GND ) );
+ I43  ( .VDD( VDD ), .A( net38 ), .B( net39 ), .OUT( net69 ), .GND( GND ) );
 
 ANDx3    
  I48  ( .VDD( VDD ), .C( net36 ), .A( net71 ), .B( net69 ), .OUT( net063 ), .GND( GND ) );

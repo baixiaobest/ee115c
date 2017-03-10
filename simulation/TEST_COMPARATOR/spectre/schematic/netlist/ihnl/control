@@ -1,6 +1,6 @@
 hnlLastStopCellInfo = '(
-                           ( "gpdk090" "nmos1v" "spectre" "50" "1361423154" )
-                          ( "gpdk090" "pmos1v" "spectre" "50" "1361423156" )
+                           ( "gpdk090" "nmos1v" "spectre" "50" "1486502103" )
+                          ( "gpdk090" "pmos1v" "spectre" "50" "1486502101" )
                        )
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"

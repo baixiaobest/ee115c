@@ -1,17 +1,8 @@
 (PropertyFile "1.0"
  (Creator " HDL Direct ver ver-date" )
- (Created " Mar  5 18:54:27 2017 " )
+ (Created " Mar  6 13:39:00 2017 " )
  (Cell  "\\FAdder_S\\"
   (View  "schematic"
-   (Inst "\\I4\\"
-	(Pr
-	 ("partName" "XOR")
-	 ("vendorName" "")
-	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
-	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
-	 ("\\pin#\\" "5")
-	 ("XY" "(9.000000,-10.500000)")
-	))
    (Inst "\\I6\\"
 	(Pr
 	 ("partName" "XOR")
@@ -29,6 +20,15 @@
 	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
 	 ("\\pin#\\" "5")
 	 ("XY" "(11.000000,-14.062500)")
+	))
+   (Inst "\\I4\\"
+	(Pr
+	 ("partName" "XOR")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT\" \"A\" \"B\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:25:47 2017")
+	 ("\\pin#\\" "5")
+	 ("XY" "(9.000000,-10.500000)")
 	))
    (Inst "\\I2\\"
 	(Pr

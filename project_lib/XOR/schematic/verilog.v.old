@@ -10,21 +10,19 @@ input  GND;
 output  OUT;
 wire VDD;
 wire net13;
-wire net19;
 wire A;
-wire B;
 wire OUT;
+wire B;
 wire GND;
-wire net20;
 
 nmos1v    
- NM1  ( .S( OUT ), .G( net13 ), .B( net19 ), .D( A ) );
+ NM1  ( .S( OUT ), .G( net13 ), .B( GND ), .D( A ) );
 
 nmos1v    
  NM0  ( .S( net13 ), .G( A ), .B( GND ), .D( OUT ) );
 
 pmos1v    
- PM1  ( .S( OUT ), .G( B ), .B( net20 ), .D( A ) );
+ PM1  ( .S( OUT ), .G( B ), .B( VDD ), .D( A ) );
 
 pmos1v    
  PM0  ( .S( B ), .G( A ), .B( VDD ), .D( OUT ) );

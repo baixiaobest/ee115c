@@ -2,4 +2,4 @@
 // Library name: project_lib
 // Cell name: TEST_COMPARATOR
 // View name: schematic
-I0 (vdd! vdd! vdd! 0 0 vdd! vdd! vdd! 0 0 0 OUT vdd!) COMPARATOR
+I3 (0 vdd! 0 0 vdd! 0 vdd! vdd! 0 0 0 OUT vdd!) COMPARATOR_S

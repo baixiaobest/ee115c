@@ -1,16 +1,15 @@
 (PropertyFile "1.0"
  (Creator " HDL Direct ver ver-date" )
- (Created " Mar  5 16:39:16 2017 " )
+ (Created " Mar  7 18:41:33 2017 " )
  (Cell  "\\TEST_COMPARATOR\\"
   (View  "schematic"
-   (Inst "\\I0\\"
+   (Inst "\\I3\\"
 	(Pr
-	 ("partName" "COMPARATOR")
+	 ("partName" "COMPARATOR_S")
 	 ("vendorName" "")
-	 ("portOrder" "(\"OUT\" \"A0\" \"A1\" \"A2\" \"A3\" \"A4\" \"B0\" \"B1\" \"B2\" \"B3\" \"B4\" \"GND\" \"VDD\")")
-	 ("interfaceLastChanged" "Mar  5 16:27:03 2017")
-	 ("\\pin#\\" "13")
-	 ("XY" "(2.187500,-1.000000)")
+	 ("interfaceLastChanged" "Mar  6 19:58:04 2017")
+	 ("\\pin#\\" "26")
+	 ("XY" "(1.312500,-0.625000)")
 	))
   )
  )

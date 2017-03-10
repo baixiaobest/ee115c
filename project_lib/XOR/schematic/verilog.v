@@ -11,9 +11,9 @@ output  OUT;
 wire VDD;
 wire net13;
 wire A;
-wire OUT;
 wire B;
 wire GND;
+wire OUT;
 
 nmos1v    
  NM1  ( .S( OUT ), .G( net13 ), .B( GND ), .D( A ) );

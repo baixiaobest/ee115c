@@ -20,21 +20,21 @@ output  OUT;
 wire VDD;
 wire net31;
 wire X1;
-wire net34;
 wire X0;
+wire net34;
 wire X3;
 wire X4;
-wire T2;
 wire X2;
-wire X5;
+wire T2;
 wire T3;
+wire X5;
 wire net32;
 wire T4;
 wire T1;
 wire OUT;
 wire net33;
-wire T0;
 wire GND;
+wire T0;
 wire net30;
 
 ABS    

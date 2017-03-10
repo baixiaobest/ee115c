@@ -1,0 +1,26 @@
+(PropertyFile "1.0"
+ (Creator " HDL Direct ver ver-date" )
+ (Created " Mar  6 13:38:57 2017 " )
+ (Cell  "\\ABS_S\\"
+  (View  "schematic"
+   (Inst "\\I0\\"
+	(Pr
+	 ("partName" "XORx5")
+	 ("vendorName" "")
+	 ("portOrder" "(\"OUT0\" \"OUT1\" \"OUT2\" \"OUT3\" \"OUt4\" \"A0\" \"A1\" \"A2\" \"A3\" \"A4\" \"A5\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  6 13:07:14 2017")
+	 ("\\pin#\\" "13")
+	 ("XY" "(-0.312500,-1.562500)")
+	))
+   (Inst "\\I2\\"
+	(Pr
+	 ("partName" "FAdder_S")
+	 ("vendorName" "")
+	 ("portOrder" "(\"S0\" \"S1\" \"S2\" \"S3\" \"S4\" \"A0\" \"A1\" \"A2\" \"A3\" \"A4\" \"Cin\" \"GND\" \"VDD\")")
+	 ("interfaceLastChanged" "Mar  5 18:55:00 2017")
+	 ("\\pin#\\" "13")
+	 ("XY" "(2.937500,-1.562500)")
+	))
+  )
+ )
+)

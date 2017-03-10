@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "7.1.1.071"
-"date" "4:39:00 PM, Sun Mar 5, 2017"
+"date" "6:41:39 PM, Tue Mar 7, 2017"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -21,13 +21,17 @@ VALUE
 ""
 ""
 )
-"ANDx4" "subckt" (
+"NAND" "subckt" (
 ""
-"A B C D GND OUT VDD"
+"A B GND OUT VDD"
 )
 "gpdk090_ndio_na25" "subckt" (
 ""
 ""
+)
+"NANDx5" "subckt" (
+""
+"A B C D E GND OUT VDD"
 )
 "gpdk090_nwdio" "subckt" (
 ""
@@ -40,6 +44,10 @@ VALUE
 "ressnpoly" "subckt" (
 ""
 ""
+)
+"COMPARATOR_S" "subckt" (
+""
+"A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 GND OUT VDD"
 )
 "gpdk090_nmos1v_iso" "subckt" (
 ""
@@ -73,10 +81,6 @@ VALUE
 ""
 "GND VDD Vin Vout"
 )
-"AND" "subckt" (
-""
-"A B GND OUT VDD"
-)
 "gpdk090_ndio_25" "subckt" (
 ""
 ""
@@ -93,21 +97,21 @@ VALUE
 ""
 ""
 )
+"NANDx3" "subckt" (
+""
+"A B C GND OUT VDD"
+)
 "gpdk090_ndio_na" "subckt" (
 ""
 ""
-)
-"ANDx5" "subckt" (
-""
-"A B C D E GND OUT VDD"
 )
 "gpdk090_ndio_hvt" "subckt" (
 ""
 ""
 )
-"ORx5" "subckt" (
+"NANDx4" "subckt" (
 ""
-"A B C D E GND OUT VDD"
+"A B C D GND OUT VDD"
 )
 "resnsppoly" "subckt" (
 ""
@@ -120,13 +124,5 @@ VALUE
 "ressppoly" "subckt" (
 ""
 ""
-)
-"ANDx3" "subckt" (
-""
-"A B C GND OUT VDD"
-)
-"COMPARATOR" "subckt" (
-""
-"A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 GND OUT VDD"
 )
 END

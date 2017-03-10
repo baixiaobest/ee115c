@@ -16,32 +16,32 @@ output  S1;
 output  S2;
 output  S3;
 output  S4;
-wire net29;
 wire VDD;
+wire net29;
 wire Cin;
 wire A1;
 wire S0;
 wire A0;
 wire net35;
-wire S4;
 wire S3;
-wire net32;
+wire S4;
 wire A2;
+wire net32;
 wire net45;
-wire A4;
-wire GND;
 wire S1;
+wire GND;
+wire A4;
 wire S2;
 wire A3;
-
-XOR    
- I4  ( .VDD( VDD ), .A( net35 ), .B( A3 ), .OUT( S3 ), .GND( GND ) );
 
 XOR    
  I6  ( .VDD( VDD ), .A( net32 ), .B( A2 ), .OUT( S2 ), .GND( GND ) );
 
 XOR    
  I5  ( .VDD( VDD ), .A( net45 ), .B( A4 ), .OUT( S4 ), .GND( GND ) );
+
+XOR    
+ I4  ( .VDD( VDD ), .A( net35 ), .B( A3 ), .OUT( S3 ), .GND( GND ) );
 
 XOR    
  I2  ( .VDD( VDD ), .A( net29 ), .B( A1 ), .OUT( S1 ), .GND( GND ) );

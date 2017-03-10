@@ -2,30 +2,24 @@
 // Cadence Design Systems, Inc.
 
 module AND (
-VDD,GND,A,B,OUT );
-input  VDD;
+GND,VDD,B,A,OUT );
 input  GND;
-input  A;
+input  VDD;
 input  B;
+input  A;
 output  OUT;
 wire VDD;
-wire net13;
 wire A;
-wire OUT;
-wire GND;
 wire B;
+wire GND;
+wire net08;
+wire OUT;
 
-nmos1v    
- NM1  ( .S( GND ), .G( net13 ), .B( GND ), .D( OUT ) );
-
-nmos1v    
- NM0  ( .S( A ), .G( B ), .B( GND ), .D( OUT ) );
-
-pmos1v    
- PM0  ( .S( A ), .G( net13 ), .B( VDD ), .D( OUT ) );
+NAND    
+ I2  ( .VDD( VDD ), .A( A ), .B( B ), .OUT( net08 ), .GND( GND ) );
 
 INV    
- I0  ( .VDD( VDD ), .Vin( B ), .Vout( net13 ), .GND( GND ) );
+ I1  ( .VDD( VDD ), .Vin( net08 ), .Vout( OUT ), .GND( GND ) );
 
 endmodule
 

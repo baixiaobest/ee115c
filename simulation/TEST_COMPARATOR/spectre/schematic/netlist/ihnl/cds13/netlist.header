@@ -1,0 +1,5 @@
+
+// Library name: project_lib
+// Cell name: COMPARATOR_S
+// View name: schematic
+subckt COMPARATOR_S A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 GND OUT VDD

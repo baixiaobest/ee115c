@@ -12,17 +12,17 @@ Protected by U.S. Patents:
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: baixiao   Host: eeapps01.seas.ucla.edu   HostID: 43A4F164   PID: 139954
-Memory  available: 54.5251 GB  physical: 67.4388 GB
+User: baixiao   Host: eeapps01.seas.ucla.edu   HostID: 43A4F164   PID: 15681
+Memory  available: 52.4509 GB  physical: 67.4388 GB
 CPU(1 of 32):  CPU 0  Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz  1200.000MHz
 
-Simulating `input.scs' on eeapps01.seas.ucla.edu at 4:39:00 PM, Sun Mar 5, 2017 (process id: 139954).
+Simulating `input.scs' on eeapps01.seas.ucla.edu at 6:41:39 PM, Tue Mar 7, 2017 (process id: 15681).
 Command line:
     /w/apps3/Cadence/SPB165/tools.lnx86/spectre/bin/32bit/spectre  \
         input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
-        +mpssession=spectre1_55686_10 -format sst2 -raw ../psf  \
+        +mpssession=spectre1_112797_7 -format sst2 -raw ../psf  \
         +lqtimeout 900 -maxw 5 -maxn 5
-spectre pid = 139954
+spectre pid = 15681
 
 Loading /w/apps3/Cadence/SPB165/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
 Loading /w/apps3/Cadence/SPB165/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
@@ -34,35 +34,35 @@ Installed AHDL simulation interface.
 
 Warning from spectre during initial setup.
     WARNING (CMI-2419): gpdk090_pmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
-    WARNING (CMI-2477): I0.I51.I0.PM0: `Rds' = 12.1875 uOhm is less than 0.001. Set to 0.
-    WARNING (CMI-2477): I0.I51.PM0: `Rds' = 3.64486 uOhm is less than 0.001. Set to 0.
-    WARNING (CMI-2477): I0.I51.PM1: `Rds' = 3.64486 uOhm is less than 0.001. Set to 0.
-    WARNING (CMI-2477): I0.I51.PM2: `Rds' = 3.64486 uOhm is less than 0.001. Set to 0.
-    WARNING (CMI-2477): I0.I51.PM3: `Rds' = 3.64486 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2477): I3.I71.PM0: `Rds' = 12.1875 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2477): I3.I71.PM1: `Rds' = 12.1875 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2477): I3.I71.PM2: `Rds' = 12.1875 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2477): I3.I71.PM3: `Rds' = 12.1875 uOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2477): I3.I71.PM4: `Rds' = 12.1875 uOhm is less than 0.001. Set to 0.
         Further occurrences of this warning will be suppressed.
     WARNING (CMI-2419): gpdk090_nmos1v: `imax' = 1 A is larger than `imelt' = 10 mA.  `imelt' is increased to `imax'.
 
 
 Circuit inventory:
-              nodes 59
-            bsim3v3 126   
+              nodes 56
+            bsim3v3 110   
             vsource 1     
 
 
 Warning from spectre.
-    WARNING (SPECTRE-6006): 111 warnings suppressed.
+    WARNING (SPECTRE-6006): 105 warnings suppressed.
 
-Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre1_55686_10, ).
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre1_112797_7, ).
 
 ***********************************************
-Transient Analysis `tran': time = (0 s -> 1 ns)
+Transient Analysis `tran': time = (0 s -> 1 us)
 ***********************************************
 Important parameter values:
     start = 0 s
     outputstart = 0 s
-    stop = 1 ns
-    step = 1 ps
-    maxstep = 20 ps
+    stop = 1 us
+    step = 1 ns
+    maxstep = 20 ns
     ic = all
     skipdc = no
     reltol = 1e-03
@@ -78,30 +78,30 @@ Important parameter values:
     cmin = 0 F
     gmin = 1 pS
 
-    tran: time = 31 ps        (3.1 %), step = 16 ps         (1.6 %)
-    tran: time = 91 ps        (9.1 %), step = 20 ps           (2 %)
-    tran: time = 131 ps      (13.1 %), step = 20 ps           (2 %)
-    tran: time = 191 ps      (19.1 %), step = 20 ps           (2 %)
-    tran: time = 231 ps      (23.1 %), step = 20 ps           (2 %)
-    tran: time = 291 ps      (29.1 %), step = 20 ps           (2 %)
-    tran: time = 331 ps      (33.1 %), step = 20 ps           (2 %)
-    tran: time = 391 ps      (39.1 %), step = 20 ps           (2 %)
-    tran: time = 431 ps      (43.1 %), step = 20 ps           (2 %)
-    tran: time = 491 ps      (49.1 %), step = 20 ps           (2 %)
-    tran: time = 531 ps      (53.1 %), step = 20 ps           (2 %)
-    tran: time = 591 ps      (59.1 %), step = 20 ps           (2 %)
-    tran: time = 631 ps      (63.1 %), step = 20 ps           (2 %)
-    tran: time = 691 ps      (69.1 %), step = 20 ps           (2 %)
-    tran: time = 731 ps      (73.1 %), step = 20 ps           (2 %)
-    tran: time = 791 ps      (79.1 %), step = 20 ps           (2 %)
-    tran: time = 831 ps      (83.1 %), step = 20 ps           (2 %)
-    tran: time = 891 ps      (89.1 %), step = 20 ps           (2 %)
-    tran: time = 931 ps      (93.1 %), step = 20 ps           (2 %)
-    tran: time = 985.5 ps    (98.6 %), step = 14.5 ps      (1.45 %)
+    tran: time = 31 ns        (3.1 %), step = 16 ns         (1.6 %)
+    tran: time = 91 ns        (9.1 %), step = 20 ns           (2 %)
+    tran: time = 131 ns      (13.1 %), step = 20 ns           (2 %)
+    tran: time = 191 ns      (19.1 %), step = 20 ns           (2 %)
+    tran: time = 231 ns      (23.1 %), step = 20 ns           (2 %)
+    tran: time = 291 ns      (29.1 %), step = 20 ns           (2 %)
+    tran: time = 331 ns      (33.1 %), step = 20 ns           (2 %)
+    tran: time = 391 ns      (39.1 %), step = 20 ns           (2 %)
+    tran: time = 431 ns      (43.1 %), step = 20 ns           (2 %)
+    tran: time = 491 ns      (49.1 %), step = 20 ns           (2 %)
+    tran: time = 531 ns      (53.1 %), step = 20 ns           (2 %)
+    tran: time = 591 ns      (59.1 %), step = 20 ns           (2 %)
+    tran: time = 631 ns      (63.1 %), step = 20 ns           (2 %)
+    tran: time = 691 ns      (69.1 %), step = 20 ns           (2 %)
+    tran: time = 731 ns      (73.1 %), step = 20 ns           (2 %)
+    tran: time = 791 ns      (79.1 %), step = 20 ns           (2 %)
+    tran: time = 831 ns      (83.1 %), step = 20 ns           (2 %)
+    tran: time = 891 ns      (89.1 %), step = 20 ns           (2 %)
+    tran: time = 931 ns      (93.1 %), step = 20 ns           (2 %)
+    tran: time = 985.5 ns    (98.6 %), step = 14.5 ns      (1.45 %)
 Number of accepted tran steps =             54
-Initial condition solution time: CPU = 10 ms, elapsed = 9.24921 ms.
-Intrinsic tran analysis time:    CPU = 60 ms, elapsed = 51.842 ms.
-Total time required for tran analysis `tran': CPU = 70 ms, elapsed = 70.9 ms.
+Initial condition solution time: CPU = 10 ms, elapsed = 7.20596 ms.
+Intrinsic tran analysis time:    CPU = 40 ms, elapsed = 46.2329 ms.
+Total time required for tran analysis `tran': CPU = 50 ms, elapsed = 62.0399 ms.
 
 finalTimeOP: writing operating point information to rawfile.
 modelParameter: writing model parameter values to rawfile.
@@ -111,8 +111,8 @@ designParamVals: writing netlist parameters to rawfile.
 primitives: writing primitives to rawfile.
 subckts: writing subcircuits to rawfile.
 
-Aggregate audit (4:49:04 PM, Sun Mar 5, 2017):
-Time used: CPU = 278 ms, elapsed = 604 s (10m  4.0s), util. = 46e-03%.
-Time spent in licensing: elapsed = 67.4 ms.
-Virtual memory used = 5.53 Mbytes.
-spectre completes with 0 errors, 119 warnings, and 0 notices.
+Aggregate audit (6:42:20 PM, Tue Mar 7, 2017):
+Time used: CPU = 232 ms, elapsed = 41 s, util. = 566e-03%.
+Time spent in licensing: elapsed = 63.2 ms.
+Virtual memory used = 5.54 Mbytes.
+spectre completes with 0 errors, 113 warnings, and 0 notices.

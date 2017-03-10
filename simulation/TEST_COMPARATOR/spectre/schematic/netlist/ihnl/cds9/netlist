@@ -1,0 +1,10 @@
+    NM0 (OUT A net45 GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    NM1 (net45 B GND GND) gpdk090_nmos1v w=(860n) l=100n as=240.8f \
+        ad=240.8f ps=1.42u pd=1.42u m=(1)*(1)
+    PM0 (OUT A VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+    PM1 (OUT B VDD VDD) gpdk090_pmos1v w=(650n) l=100n as=182f ad=182f \
+        ps=1.21u pd=1.21u m=(1)*(1)
+ends NAND
+// End of subcircuit definition.

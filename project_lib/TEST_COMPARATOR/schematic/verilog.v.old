@@ -7,8 +7,8 @@ wire \vdd! ;
 wire \gnd! ;
 wire OUT;
 
-COMPARATOR    
- I0  ( .VDD( \vdd!  ), .B1( \vdd!  ), .A1( \vdd!  ), .A0( \vdd!  ), .B0( \vdd!  ), .A2( \vdd!  ), .B4( \gnd!  ), .B2( \vdd!  ), .A4( \gnd!  ), .OUT( OUT ), .GND( \gnd!  ), .B3( \gnd!  ), .A3( \gnd!  ) );
+COMPARATOR_S    
+ I3  ( .VDD( \vdd!  ), .B1( \vdd!  ), .A1( \vdd!  ), .A0( \gnd!  ), .B0( \gnd!  ), .A2( \gnd!  ), .B4( \gnd!  ), .B2( \vdd!  ), .A4( \gnd!  ), .OUT( OUT ), .GND( \gnd!  ), .B3( \gnd!  ), .A3( \gnd!  ) );
 
 endmodule
 

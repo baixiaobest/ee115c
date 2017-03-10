@@ -1,6 +1,6 @@
 (PropertyFile "1.0"
  (Creator " HDL Direct ver ver-date" )
- (Created " Mar  5 15:06:35 2017 " )
+ (Created " Mar  6 22:17:41 2017 " )
  (Cell  "\\ORx5\\"
   (View  "schematic"
    (Inst "\\NM4\\"
@@ -215,12 +215,12 @@
 	))
    (Inst "\\PM4\\"
 	(Pr
-	 ("w" "2.15uM")
-	 ("fw" "2.15uM")
-	 ("ad" "602f")
-	 ("as" "602f")
-	 ("pd" "2.71uM")
-	 ("ps" "2.71uM")
+	 ("w" "3.25uM")
+	 ("fw" "3.25uM")
+	 ("ad" "910f")
+	 ("as" "910f")
+	 ("pd" "3.81uM")
+	 ("ps" "3.81uM")
 	 ("instNamePrefix" "PM")
 	 ("XY" "(3.812500,-3.312500)")
 	 ("model" "gpdk090_pmos1v")
@@ -257,12 +257,12 @@
 	))
    (Inst "\\PM3\\"
 	(Pr
-	 ("w" "2.15uM")
-	 ("fw" "2.15uM")
-	 ("ad" "602f")
-	 ("as" "602f")
-	 ("pd" "2.71uM")
-	 ("ps" "2.71uM")
+	 ("w" "3.25uM")
+	 ("fw" "3.25uM")
+	 ("ad" "910f")
+	 ("as" "910f")
+	 ("pd" "3.81uM")
+	 ("ps" "3.81uM")
 	 ("instNamePrefix" "PM")
 	 ("XY" "(3.812500,-0.750000)")
 	 ("model" "gpdk090_pmos1v")
@@ -299,12 +299,12 @@
 	))
    (Inst "\\PM2\\"
 	(Pr
-	 ("w" "2.15uM")
-	 ("ps" "2.71uM")
-	 ("pd" "2.71uM")
-	 ("as" "602f")
-	 ("ad" "602f")
-	 ("fw" "2.15uM")
+	 ("w" "3.25uM")
+	 ("ps" "3.81uM")
+	 ("pd" "3.81uM")
+	 ("as" "910f")
+	 ("ad" "910f")
+	 ("fw" "3.25uM")
 	 ("instNamePrefix" "PM")
 	 ("XY" "(3.812500,-2.625000)")
 	 ("model" "gpdk090_pmos1v")
@@ -341,12 +341,12 @@
 	))
    (Inst "\\PM1\\"
 	(Pr
-	 ("w" "2.15uM")
-	 ("fw" "2.15uM")
-	 ("ad" "602f")
-	 ("as" "602f")
-	 ("pd" "2.71uM")
-	 ("ps" "2.71uM")
+	 ("w" "3.25uM")
+	 ("fw" "3.25uM")
+	 ("ad" "910f")
+	 ("as" "910f")
+	 ("pd" "3.81uM")
+	 ("ps" "3.81uM")
 	 ("instNamePrefix" "PM")
 	 ("XY" "(3.812500,-2.000000)")
 	 ("model" "gpdk090_pmos1v")
@@ -383,12 +383,12 @@
 	))
    (Inst "\\PM0\\"
 	(Pr
-	 ("w" "2.15uM")
-	 ("ps" "2.71uM")
-	 ("pd" "2.71uM")
-	 ("as" "602f")
-	 ("ad" "602f")
-	 ("fw" "2.15uM")
+	 ("w" "3.25uM")
+	 ("ps" "3.81uM")
+	 ("pd" "3.81uM")
+	 ("as" "910f")
+	 ("ad" "910f")
+	 ("fw" "3.25uM")
 	 ("instNamePrefix" "PM")
 	 ("XY" "(3.812500,-1.375000)")
 	 ("model" "gpdk090_pmos1v")
